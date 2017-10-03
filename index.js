@@ -47,6 +47,8 @@ var jcbPrefixList = new Array(
 
 var voyagerPrefixList = new Array("8699");
 
+var testPrefixList = new Array("500000")
+
 /**
  * Revert a String
  * @param  {String} str
@@ -170,6 +172,10 @@ module.exports.Schemes = {
     },
     "Voyager": {
         prefixList: voyagerPrefixList,
+        digitCount: 16
+    },
+    "Test": {
+        prefixList: testPrefixList,
         digitCount: 16
     }
 }
